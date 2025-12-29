@@ -1,7 +1,7 @@
-console.log("This is a popup!")
-
 const goToItewaButton = document.getElementById("goToItewaButton");
 
 goToItewaButton.addEventListener("click", () => {
-    console.log("Button was clicked!");
+    chrome.tabs.create({
+        url: "https://itewa.takima.io/expenses"
+    });
 });
