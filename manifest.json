@@ -1,0 +1,10 @@
+{
+  "name": "Itewa Expense Recap Extension",
+  "description": "Sends the monthly Itewa expense recap on your behalf",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/hello.html",
+    "default_icon": "images/hello_extensions.png"
+  }
+}
