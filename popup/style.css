@@ -8,8 +8,7 @@
     background-color: #f5f5ff;
 }
 
-.btn {
-    display: none;
+.big_btn {
 
     padding: 10px;
     border-radius: 10px;
@@ -18,10 +17,85 @@
     border-color: transparent;
 
     color: white;
+
     font-size: 20px;
 }
 
-.btn:hover {
+.big_btn:hover {
     background-color: #ca095e;
     transform: scale(1.02);
+}
+
+.small_btn {
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: #ee0b6d;
+    border-color: transparent;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+.small_btn:hover {
+    background-color: #ca095e;
+    transform: scale(1.02);
+}
+
+.mailGenerationPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 5%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.expenseOverview {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: stretch;
+    gap: 5%;
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 75%;
+}
+
+.expenseActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 5%;
+
+    width: 100%;
+    height: 25%;
+}
+
+.placeholder {
+    height: 30%;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background-color: lightgray;
+
+    animation: flicker 2.5s ease-in-out infinite;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
 }
